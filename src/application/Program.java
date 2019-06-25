@@ -10,7 +10,9 @@ public class Program {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);  
-		String path = "C:\\temp\\123.txt";
+		System.out.println("digite o nome do arquivo txt");
+		String arquivo = sc.nextLine();
+		String path = "C:\\temp\\"+arquivo+".txt"  ;
 		boolean saida = false;
 		
 		try(BufferedWriter bw = new BufferedWriter(new FileWriter(path))){
